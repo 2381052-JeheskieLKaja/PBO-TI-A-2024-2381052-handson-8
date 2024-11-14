@@ -1,14 +1,13 @@
 package views;
 
 import entities.TodoList;
-import services.TodoListService;
 import services.TodoListServicesImpl;
 
 import java.util.Scanner;
 
 public class TodoListTerminalView implements TodoListView{
     public Scanner scanner = new Scanner(System.in);
-    private final TodoListService todoListService;
+    private final TodoListServicesImpl todoListService;
 
     public TodoListTerminalView(TodoListServicesImpl todoListService) {
         this.todoListService = todoListService;
